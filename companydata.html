@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسم الشركه</title>
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 file css -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- main css manger file -->
+    <link rel="stylesheet" href="css/cmanger.css">
+    <!-- main css manger file -->
+    <link rel="stylesheet" href="css/compdata.css">
+</head>
+<body>
+  <!-- header section -->
+    <header class="header p-2">
+        <!-- start main nav -->
+        <nav class="main-nav d-flex align-items-center shadow container-fluid">
+            <div class="logo px-2" style="cursor: pointer;" onclick="homepage()">
+                <!-- <h5 class="d-none d-md-flex">البحوث <span>والتطوير</span></h5> -->
+                <div class="d-none d-md-block">
+                    <h6 class=" text-center m-0">الإدارة العامة</h6>
+                    <h6 class=" text-center m-0">للبحوث <span>و</span> التطوير</h6>
+                </div>
+                <img src="images/tech-off.png" alt="user-img" class="rounded-circle d-md-none" style="width:40px;height: 40px;">
+            </div>
+        <!-- //////////////////////////////////// -->
+            <div class="d-center">
+                <div class="sub-menue d-flex">
+                    <div class="icon-menue d-flex">
+                        <div class="user">
+                            <div class="username d-center">
+                                <a href="#" class="nav-link d-center">
+                                    <i class="fa-solid fa-angle-down fa-lg"></i>
+                                    <div class="d-center flex-column ">
+                                        <h6 class="d-none d-sm-flex">د.ياسر محمد</h6>
+                                        <small class="d-none d-sm-flex" style="margin-top: -10px;">رئيس الإدارة</small>
+                                    </div>
+                                    <img src="images/user-img.png" alt="user-img" class="rounded-circle ms-1" style="width:40px;height: 40px;">
+                                </a>
+                                <div class="div-hov px-3 py-2">
+                                    <div class="d-center flex-column py-2">
+                                        <h6>م.ياسر محمد</h6>
+                                        <small style="margin-top: -10px;">رئيس الإدارة</small>
+                                    </div>
+                                    <div class="py-2" style="border-top: 1px solid #9336B4;">
+                                        <a href="#" class="">
+                                            <i class="fa-solid fa-user fa-lg"></i>
+                                            <small class="ms-2">الملف الشخصي</small>
+                                        </a>
+                                    </div>
+                                    <div class="py-2" style="border-top: 1px solid #9336B4;">
+                                        <a href="#">
+                                            <i class="fa-solid fa-screwdriver-wrench fa-lg"></i>
+                                            <small class="ms-2">اعدادات الحساب</small>
+                                        </a>
+                                    </div>
+                                    <div class="py-2" style="border-top: 1px solid #9336B4;">
+                                        <a href="#">
+                                            <i class="fa-solid fa-circle-info fa-lg"></i>
+                                            <small class="ms-2">مساعدة ؟</small>
+                                        </a>
+                                    </div>
+                                    <div class="py-2" style="border-top: 1px solid #9336B4;">
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-right-from-bracket"></i>
+                                        <small class="ms-2">تسجيل الخروج</small>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- //////////////////////////////////// -->
+                        <div class="form-check form-switch d-center">
+                        <input class="form-check-input btn-aside" type="checkbox" id="flexSwitchCheckChecked">
+                        <!-- <label class="form-check-label" for="flexSwitchCheckDefault"></label> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- //////////////////////////////////// -->
+        </nav>
+        <!-- end main nav -->
+        <!-- side nav -->
+        <aside class="shadow" hidden>
+            <div class="aside">
+                <ul class="navbar-nav">
+                    <li class="center notifications">
+                        <i class="fa-solid fa-bell mx-2"></i>
+                        اهم الاشعارات
+                    </li>
+                    <li class="center numbers">
+                        <i class="fa-solid fa-id-badge mx-2"></i>
+                        ارقام المديرين
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- ///////////////////////////////////////// -->
+        <div class="contacts shadow divcontacts" hidden>
+            <div class="left-line">
+                <i class="fa-solid fa-left-long fa-2xl"></i>
+            </div>
+            <div class="aside-cont">
+                <ul class="navbar-nav">
+                    <li class="center d-center">
+                        <i class="fa-regular fa-circle-user fa-xl mx-1"></i>
+                        <span>م.ايمان فتحى</span>
+                        <a href="tel:01002062045" target="_blank"  class="text-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-square-phone-flip fa-xl mx-1"></i>
+                        </a>
+                        <a class="text-success" href="https://alvo.chat/2afo" target="_blank"  style="text-decoration: none;">
+                            <i class="fa-brands fa-square-whatsapp fa-xl mx-1"></i>
+                        </a>
+                            <i class="fa-solid fa-circle-info fa-xl mx-1 text-secondary show-note"></i>
+                            <div class="div-cont" hidden>مدير عام المكتب الفنى</div>
+                    </li>
+                    <li class="center d-center">
+                        <i class="fa-regular fa-circle-user fa-xl mx-1"></i>
+                        <span style="width:94px;display:inline-block;overflow:hidden;">اسم المدير</span>
+                        <a href="tel:01002062045" target="_blank"  class="text-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-square-phone-flip fa-xl mx-1"></i>
+                        </a>
+                        <a class="text-success" href="https://alvo.chat/2afo" target="_blank"  style="text-decoration: none;">
+                            <i class="fa-brands fa-square-whatsapp fa-xl mx-1"></i>
+                        </a>
+                            <i class="fa-solid fa-circle-info fa-xl mx-1 text-secondary show-note"></i>
+                            <div class="div-cont" hidden>مدير عام المكتب الفنى</div>
+                    </li>
+                    <li class="center d-center">
+                        <i class="fa-regular fa-circle-user fa-xl mx-1"></i>
+                        <span style="width:94px;display:inline-block;overflow:hidden;">اسم المدير</span>
+                        <a href="tel:01002062045" target="_blank"  class="text-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-square-phone-flip fa-xl mx-1"></i>
+                        </a>
+                        <a class="text-success" href="https://alvo.chat/2afo" target="_blank"  style="text-decoration: none;">
+                            <i class="fa-brands fa-square-whatsapp fa-xl mx-1"></i>
+                        </a>
+                            <i class="fa-solid fa-circle-info fa-xl mx-1 text-secondary show-note"></i>
+                            <div class="div-cont" hidden>مدير عام المكتب الفنى</div>
+                    </li>
+                    <li class="center d-center">
+                        <i class="fa-regular fa-circle-user fa-xl mx-1"></i>
+                        <span style="width:94px;display:inline-block;overflow:hidden;">اسم المدير</span>
+                        <a href="tel:01002062045" target="_blank"  class="text-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-square-phone-flip fa-xl mx-1"></i>
+                        </a>
+                        <a class="text-success" href="https://alvo.chat/2afo" target="_blank"  style="text-decoration: none;">
+                            <i class="fa-brands fa-square-whatsapp fa-xl mx-1"></i>
+                        </a>
+                            <i class="fa-solid fa-circle-info fa-xl mx-1 text-secondary show-note"></i>
+                            <div class="div-cont" hidden>مدير عام المكتب الفنى</div>
+                    </li>
+                    <li class="center d-center">
+                        <i class="fa-regular fa-circle-user fa-xl mx-1"></i>
+                        <span style="width:94px;display:inline-block;overflow:hidden;">اسم المدير</span>
+                        <a href="tel:01002062045" target="_blank"  class="text-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-square-phone-flip fa-xl mx-1"></i>
+                        </a>
+                        <a class="text-success" href="https://alvo.chat/2afo" target="_blank"  style="text-decoration: none;">
+                            <i class="fa-brands fa-square-whatsapp fa-xl mx-1"></i>
+                        </a>
+                            <i class="fa-solid fa-circle-info fa-xl mx-1 text-secondary show-note"></i>
+                            <div class="div-cont" hidden>مدير عام المكتب الفنى</div>
+                    </li>
+                    <li class="center d-center">
+                        <i class="fa-regular fa-circle-user fa-xl mx-1"></i>
+                        <span style="width:94px;display:inline-block;overflow:hidden;">اسم المدير</span>
+                        <a href="tel:01002062045" target="_blank"  class="text-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-square-phone-flip fa-xl mx-1"></i>
+                        </a>
+                        <a class="text-success" href="https://alvo.chat/2afo" target="_blank"  style="text-decoration: none;">
+                            <i class="fa-brands fa-square-whatsapp fa-xl mx-1"></i>
+                        </a>
+                            <i class="fa-solid fa-circle-info fa-xl mx-1 text-secondary show-note"></i>
+                            <div class="div-cont" hidden>مدير عام المكتب الفنى</div>
+                    </li>
+                    <li class="center d-center">
+                        <i class="fa-regular fa-circle-user fa-xl mx-1"></i>
+                        <span style="width:94px;display:inline-block;overflow:hidden;">اسم المدير</span>
+                        <a href="tel:01002062045" target="_blank"  class="text-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-square-phone-flip fa-xl mx-1"></i>
+                        </a>
+                        <a class="text-success" href="https://alvo.chat/2afo" target="_blank"  style="text-decoration: none;">
+                            <i class="fa-brands fa-square-whatsapp fa-xl mx-1"></i>
+                        </a>
+                            <i class="fa-solid fa-circle-info fa-xl mx-1 text-secondary show-note"></i>
+                            <div class="div-cont" hidden>مدير عام المكتب الفنى</div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <!-- ///////////////////////////////////// -->
+        <div class="contacts shadow notification" hidden>
+            <div class="left-line">
+                <i class="fa-solid fa-left-long fa-2xl"></i>
+            </div>
+            <div class="aside-cont">
+                <div class="bg-white my-3" style="border-radius: 5px; text-align: center;padding:10px;">
+                    <div class="d-flex mb-2" style="justify-content: flex-start; padding: 5px;">
+                        <i class="fa-regular fa-bell fa-xl"></i>
+                    </div>
+                    <p>تم بداية تشغيل محطتى رفع عزبة ابو باشا  ورفع  سندنهور بمركز بنها  </p>
+                    <div class="d-flex" style="justify-content: space-between;"> 
+                        <span class="badge bg-success">1/5/2023</span>
+                        <a href="#" class="badge bg-info text-white">More Info</a>
+                        <span class="badge bg-primary">NEW</span>
+                    </div>
+                </div>
+                <div class="bg-white my-3" style="border-radius: 5px; text-align: center;padding:10px;">
+                    <div class="d-flex mb-2" style="justify-content: flex-start; padding: 5px;">
+                        <i class="fa-regular fa-bell fa-xl"></i>
+                    </div>
+                    <p>محطة نوى الارتوازى تم دخولها الخدمة وهى محطة جديدة ضمن مشروعات حياه كريمة ( تعمل احتياطى )</p>
+                    <div class="d-flex" style="justify-content: space-between;"> 
+                        <span class="badge bg-success">1/4/2023</span>
+                        <a href="#" class="badge bg-info text-white">More Info</a>
+                        <span class="badge bg-primary">NEW</span>
+                    </div>
+                </div>
+                <div class="bg-white my-3" style="border-radius: 5px; text-align: center;padding:10px;">
+                    <div class="d-flex mb-2" style="justify-content: flex-start; padding: 5px;">
+                        <i class="fa-regular fa-bell fa-xl"></i>
+                    </div>
+                    <p>محطة الرفع الفرعية رقم 5 شبين القناطر جارى أعمال صيانة للطلمبات</p>
+                    <div class="d-flex" style="justify-content: space-between;"> 
+                        <span class="badge bg-success">1/1/2023</span>
+                        <a href="#" class="badge bg-info text-white">More Info</a>
+                        <span class="badge bg-primary">NEW</span>
+                    </div>
+                </div>
+                <div class="bg-white my-3" style="border-radius: 5px; text-align: center;padding:10px;">
+                    <div class="d-flex mb-2" style="justify-content: flex-start; padding: 5px;">
+                        <i class="fa-regular fa-bell fa-xl"></i>
+                    </div>
+                    <p>محطة معالجة اجهور الصغرى تم الاستلام الابتدائى 
+                        تعمل عن طريق الشركة المنفذه تحت اشراف الجهاز التنفيذى</p>
+                    <div class="d-flex" style="justify-content: space-between;"> 
+                        <span class="badge bg-success">1/12/2022</span>
+                        <a href="#" class="badge bg-info text-white">More Info</a>
+                        <span class="badge bg-primary">NEW</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- side nav -->
+    </header>
+    <!-- //////////////////////// -->
+    <div class="main-page">
+        <div class="container">
+            <div class="content-comp">
+
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 file css -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- chartjs link -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- chartjs file -->
+    <script src="js/chartjs.js"></script>
+    <!-- chartjs file -->
+    <script src="js/chartcm.js"></script>
+    <!-- main js file -->
+    <script src="js/mainScript.js"></script>
+    <!-- Data js file -->
+    <script src="js/data.js"></script>
+    <!-- main js file -->
+    <script src="js/compdata.js"></script>
+</body>
+</html>
+

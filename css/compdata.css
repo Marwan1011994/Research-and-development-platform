@@ -1,0 +1,98 @@
+body{
+    min-height: 2500px;
+}
+.main-page .content-comp{
+
+}
+.main-page .divtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-page .divtitle h3,.main-page .divtitle h4{
+    width: fit-content;
+    background: #FFF6F6;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.content-comp .divcont  .nav-link{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 5px auto;
+    text-align: center;
+}
+.content-comp .divcont  .active{
+    background: #fff !important;
+    color: #40128B !important;
+}
+@media (max-width:500px) {
+    .content-comp .divcont .nav-tabs{
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+.content-comp .tab-content .structure div:not(.cont-struc){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.content-comp .tab-content .structure h4{
+    border: 2px solid #40128B;
+    padding: 10px;
+    text-align: center;
+    margin: 12px auto;
+    cursor: pointer;
+    position: relative;
+}
+.content-comp .tab-content .structure h4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    opacity: 0.1;
+    transition: all 0.5s linear;
+}
+.content-comp .tab-content .structure h4:hover::after{
+    width: 100%;
+}
+.content-comp .tab-content .structure .cont-struc{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100px;
+    border-top: 2px solid #40128B;
+    margin-top:12px ;
+}
+.content-comp .tab-content .structure .cont-struc h4{
+    margin: 0;
+    border: 2px solid #40128B;
+    border-top:none ;
+}
+.modal-body a{
+    text-decoration: none;
+    
+}
+@media (max-width:340px) {
+    .content-comp .tab-content .structure .cont-struc{
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #40128B;
+        padding: 5px;
+    }
+    .content-comp .tab-content .structure .cont-struc h4:nth-of-type(2){
+        margin: 5px 0 !important;
+    }
+    .content-comp .tab-content .structure .cont-struc h4{
+        border: 2px solid #40128B;
+    }
+}
