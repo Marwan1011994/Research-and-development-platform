@@ -216,7 +216,7 @@ let cont = `
                   <td>150,000</td>
                 </tr>
               </tbody>
-              <tfoot>
+              <tfoot class="bg-success text-white h6">
                 <tr>
                     <td colspan="3">اجمالى القيم المالية المستحقة</td>
                     <td colspan="1">450,000</td>
@@ -242,14 +242,16 @@ let Modelinfo =`
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <!-- Modal body -->
-        <div class="modal-body">
-            <h3 class="d-inline-block"></h3>
-            <a href="" class="ms-3 text-primary call">
+        <div class="modal-body d-flex justify-content-between align-items-center">
+            <h3 class="d-flex"></h3>
+            <div class="d-flex">
+                <a href="" class="ms-1 text-primary call">
                 <i class="fa-solid fa-square-phone-flip fa-2xl"></i>
-            </a>
-            <a href="" class="ms-1 text-success whats" target="_blank">
-                <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
-            </a>
+                </a>
+                <a href="" class="ms-1 text-success whats" target="_blank">
+                    <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+                </a>
+            </div>
         </div>
 
         <!-- Modal footer -->

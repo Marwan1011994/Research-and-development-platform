@@ -489,21 +489,27 @@ table caption{
     justify-content: center;
     align-items: center;
     position: relative;
+    background-image: url(../images/R&D.webp);
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .parentlog .left, .parentlog .right{
     width: 50%;
     height: 100vh;
 }
 .parentlog .left{
-    background: var(--secondary-color);
+    /* background: var(--secondary-color); */
 }
 .parentlog .right{
-    background: var(--color-txt);
+    /* background: var(--color-txt); */
 }
 .parentlog .login{
     width: 400px;
-    height: 500px;
-    background: #f9f9f9;
+    height: max-content;
+    background: #f9f9f940;
+    padding: 25px 0;
     border-radius: 20px;
     position: absolute;
     top:50%;
@@ -513,6 +519,11 @@ table caption{
 .parentlog .login h2{
     margin: 20px 0;
     font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+    color: var(--white-color);
+    background-color: #9336B4;
+    padding: 10px;
 }
 .parentlog .login input{
     margin: 10px 0;
@@ -539,6 +550,11 @@ table caption{
 }
 .parentlog .login  .wrongid,.parentlog .login  .wrongpass{
     cursor: pointer;
+}
+.linkrem{
+    color: #00f;
+    font-weight: bold;
+    font-size: 18px;
 }
 @media (max-width:567px) {
     .parentlog .login{

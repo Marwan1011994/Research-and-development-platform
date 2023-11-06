@@ -96,3 +96,10 @@ body{
         border: 2px solid #40128B;
     }
 }
+/*//////////////////////////////////*/
+
+@media (max-width:340px) {
+    .fa-square-whatsapp,.fa-square-phone-flip{
+        font-size: 22px;
+    }
+}

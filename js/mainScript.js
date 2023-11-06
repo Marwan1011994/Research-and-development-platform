@@ -17,9 +17,7 @@ let codeId = document.getElementById("codeId")
 let passId = document.getElementById("passId")
 let submit = document.getElementById("submit")
 submit.onclick = function(){
-    if(codeId.value === "em" && passId.value === "0000" ){
-        window.location.href='indicators.html';
-    }else if(codeId.value === "ms" && passId.value === "0000" ){
+    if(codeId.value.toLowerCase() === "r&s" && passId.value === "0000" ){
         window.location.href='cmanger.html';
     }
 
@@ -38,7 +36,7 @@ let wrongId = document.querySelector(".login .wrongid")
 let wrongPass = document.querySelector(".login .wrongpass")
 
 codeId.onkeyup = function(){
-    if(codeId.value === "em" || codeId.value === "ms" ){
+    if(codeId.value.toLowerCase() === "r&s" ){
         correctId.removeAttribute("hidden");
         wrongId.setAttribute("hidden","");
         passId.removeAttribute("readonly");
