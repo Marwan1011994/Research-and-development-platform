@@ -78,7 +78,7 @@ let cont = `
 </ul>
 
 <!-- Tab panes -->
-<div class="tab-content">
+<div class="tab-content shadow">
     <div class="tab-pane container active" id="home">
         <div class="structure">
             <div>
@@ -233,7 +233,7 @@ if(namearray === 0){
 }
 let Modelinfo =`
     <div class="modal" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered ">
         <div class="modal-content">
 
         <!-- Modal Header -->
@@ -299,3 +299,20 @@ namestruc.forEach((ele,index)=>{
 
 })
 
+///////////////////////////////////////////////////
+let subMenue = document.querySelector(".sub-menue .submenue");
+let showMenue = document.querySelector(".sub-menue .showmenue");
+let faangledown = document.querySelector(".sub-menue .fa-angle-down")
+let faangleup = document.querySelector(".sub-menue .fa-angle-up")
+subMenue.onclick = ()=>{
+    console.log("htisss")
+    if(showMenue.hasAttribute("hidden")){
+        showMenue.removeAttribute("hidden")
+        faangleup.removeAttribute("hidden")
+        faangledown.setAttribute("hidden","")
+    }else{
+        showMenue.setAttribute("hidden","")
+        faangledown.removeAttribute("hidden")
+        faangleup.setAttribute("hidden","")
+    }
+}

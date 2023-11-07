@@ -76,3 +76,20 @@ linkCard.forEach((ele)=>{
 const homepage = ()=>{
     window.open("cmanger.html", "_self");
 }
+///////////////////////////////////////////////////
+let subMenue = document.querySelector(".sub-menue .submenue");
+let showMenue = document.querySelector(".sub-menue .showmenue");
+let faangledown = document.querySelector(".sub-menue .fa-angle-down")
+let faangleup = document.querySelector(".sub-menue .fa-angle-up")
+subMenue.onclick = ()=>{
+    console.log("htisss")
+    if(showMenue.hasAttribute("hidden")){
+        showMenue.removeAttribute("hidden")
+        faangleup.removeAttribute("hidden")
+        faangledown.setAttribute("hidden","")
+    }else{
+        showMenue.setAttribute("hidden","")
+        faangledown.removeAttribute("hidden")
+        faangleup.setAttribute("hidden","")
+    }
+}

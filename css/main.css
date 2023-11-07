@@ -75,14 +75,14 @@ table caption{
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     position: absolute;
     top:55px;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
     transition: all 0.5s linear;
 }
-.header .username:hover .div-hov,.header .icon-nav .div-icon:hover .div-hov{
+/* .header .username:hover .div-hov,.header .icon-nav .div-icon:hover .div-hov{
     opacity: 1;
     visibility: visible;
-}
+} */
 .header .icon-nav .div-icon .div-hov{
     top:35px;
     left: 0px;
